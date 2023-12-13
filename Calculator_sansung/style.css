@@ -18,12 +18,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #868686;
 }
 
 .conteiner {
-    width: 350px;
-    height: 600px;
+    width: 450px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,14 +39,22 @@ main {
     border-radius: 20px;
     padding: 10px;
     display: flex;
-    justify-content: end;
-    align-items: center;
+    justify-content: center;
+    align-items: end;
     flex-wrap: wrap;  
+    flex-direction: column;
 }
 
 #result {
-    font-size: 20pt;
+    font-size: 14pt;
     font-weight: 500;
+    color: #b3b3b3;
+    flex-wrap: wrap; 
+}
+
+#final {
+    font-size: 20pt;
+    font-weight: 600;
     color: #fff;
     flex-wrap: wrap; 
 }
@@ -100,4 +108,16 @@ main {
 
 .color {
     color: rgb(49, 170, 49);
+}
+
+@media only screen and (max-width: 500px) {
+    .conteiner {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+
+    .resultato { 
+        border-radius: 0px;
+    }
 }
